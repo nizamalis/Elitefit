@@ -7,9 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+  </head>
 <body >
-     
+  
 <!-- HEADER -->
 <div style="display:flex;
 justify-content:space-between;
@@ -17,6 +19,28 @@ align-items:center;
 padding:15px 80px;
 background:#111;
 color:white;">
+
+ <!-- offcanvas strt -->
+  <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i><img src="/png/menu.png"></i></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header bg-dark">
+    <h5 class="offcanvas-title text-warning" id="offcanvasScrollingLabel">x</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group list-group-flush">
+  <li class="list-group-item text-warning">Shirts</li>
+  <li class="list-group-item text-warning">pants</li>
+  <li class="list-group-item text-warning">jeans</li>
+  <li class="list-group-item text-warning">Blazer</li>
+  <li class="list-group-item text-warning">Tie</li>
+</ul>
+  </div>
+</div>
+
+
+  <!-- offcanvas end -->
 
   <!-- LEFT → Logo + Tagline -->
   <div style="display:flex; align-items:center; gap:15px;">
@@ -44,11 +68,71 @@ color:white;">
 
     <a href="#" style="margin:auto;"> <i> <img src="/png/carts.png" height="50" width="50" ></i></a>
     <a href="#" style="margin: auto;"> <i> <img src="/png/login.png" height="50" width="50"></i></a>
-
+ 
+    
     
   </div>
 
 </div>
+
+
+
+<!-- accordion strt -->
+
+    <div class="">
+      <div class="row">
+      <div class="col-2">
+        <div class="accordion accordion-flush" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header ">
+      <button class="accordion-button text-warning bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+        Shirts
+         
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul class="list-group list-group-flush">
+  <li class="list-group-item text-warning"> linen Shirt</li>
+  <li class="list-group-item text-warning"> checked print shirt</li>
+  <li class="list-group-item text-warning">cotton shirt</li>
+  <li class="list-group-item text-warning">denim shirt</li>
+  <li class="list-group-item text-warning">plan shirt</li>
+</ul>
+      </div>
+    </div>
+  </div>
+      </div>
+      <!-- 2nd accordion  -->
+      <div class="accordion accordion-flush" id="Trousers">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"> Trousers</button></h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="Trousers">
+              <div class="accordion-body">
+                screcth
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- 3rd accordion -->
+       <div class="accordion accordion-flush" id="Trousers">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseTwo">jeans</button></h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="Trousers">
+              <div class="accordion-body">
+                straight fit
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+<!-- accordion end  -->
 
 
 </body>
