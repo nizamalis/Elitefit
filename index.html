@@ -21,7 +21,7 @@ background:#111;
 color:white;">
 
  <!-- offcanvas strt -->
-  <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i><img src="/png/menu.png"></i></button>
+  <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="/png/menu.png"></button>
 
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header bg-dark">
@@ -67,13 +67,50 @@ color:white;">
     style="padding:8px; border-radius:5px; border:none;">
 
     <a href="#" style="margin:auto;"> <i> <img src="/png/carts.png" height="50" width="50" ></i></a>
-    <a href="#" style="margin: auto;"> <i> <img src="/png/login.png" height="50" width="50"></i></a>
- 
-    
-    
+    <!-- <a href="#" style="margin: auto;"> <i> <img src="/png/login.png" height="50" width="50"></i></a> -->
+       <i class="nav-btn text-white" data-bs-toggle="modal" data-bs-target="#login"> <img src="/png/login.png" height="50" width="50"></i>
   </div>
 
 </div>
+
+
+ <!-- modal for login page -->
+  <div class="modal" id="login">
+        <div class="modal-dialog border border-5 border-secondary rounded-4">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-warning">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login !</h1>
+                    <button type="button" class="btn-close bg-dark " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-dark text-warning">Login</button>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+     <!-- login modal end  -->
 
 
 
@@ -81,16 +118,16 @@ color:white;">
 
     <div class="">
       <div class="row">
-      <div class="col-2">
-        <div class="accordion accordion-flush" id="accordionExample">
+      <div class="col-2 ">
+        <div class="accordion accordion-flush bg-dark text-warning" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header ">
-      <button class="accordion-button text-warning bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+      <button class="accordion-button text-warning  bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
         Shirts
          
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
       <ul class="list-group list-group-flush">
   <li class="list-group-item text-warning"> linen Shirt</li>
@@ -107,21 +144,21 @@ color:white;">
       <div class="accordion accordion-flush" id="Trousers">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"> Trousers</button></h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="Trousers">
-              <div class="accordion-body">
+            <button class="accordion-button text-warning bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"> Trousers</button></h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="Trousers">
+              <div class="accordion-body text-warning">
                 screcth
               </div>
             </div>
         </div>
       </div>
       <!-- 3rd accordion -->
-       <div class="accordion accordion-flush" id="Trousers">
+       <div class="accordion accordion-flush " id="Trousers">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseTwo">jeans</button></h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="Trousers">
-              <div class="accordion-body">
+            <button class="accordion-button text-warning bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseTwo">jeans</button></h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="Trousers">
+              <div class="accordion-body text-warning">
                 straight fit
               </div>
             </div>
@@ -129,10 +166,93 @@ color:white;">
       </div>
 
     </div>
-    </div>
-    </div>
+     <!-- accordion end -->
 
-<!-- accordion end  -->
+     <!-- card strt -->
+
+     <div class="col-10">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/blazer.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">Men's Blazer </h5>
+        <p class="card-text ">high-quality natural fabrics, meticulous tailoring, and timeless design, designed to offer comfort, durability, and a polished appearance for business or upscale occasions</p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/blazer2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">Royal blue blazer</h5>
+        <p class="card-text ">high-quality natural fabrics, meticulous tailoring, and timeless design, designed to offer comfort, durability, and a polished appearance for business or upscale occasions</p>
+         <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/blazerman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Black-king  Blazer</h5>
+        <p class="card-text">high-quality natural fabrics, meticulous tailoring, and timeless design, designed to offer comfort, durability, and a polished appearance for business or upscale occasions</p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/classicshirt.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">classic old school shirt</h5>
+        <p class="card-text">high-quality fabrics like Giza or Supima cotton, superior construction details such as single-needle stitching and mother-of-pearl buttons, and a tailored fit that offers both comfort and a sharp silhouette.</p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/classicshirt.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">classic old school shirt</h5>
+        <p class="card-text">high-quality fabrics like Giza or Supima cotton, superior construction details such as single-needle stitching and mother-of-pearl buttons, and a tailored fit that offers both comfort and a sharp silhouette.</p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/img/classicshirt.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">classic old school shirt</h5>
+        <p class="card-text">high-quality fabrics like Giza or Supima cotton, superior construction details such as single-needle stitching and mother-of-pearl buttons, and a tailored fit that offers both comfort and a sharp silhouette.</p>
+        <a href="#" class="btn btn-warning">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+
+     <!-- caed end -->
+
+    </div>
+    </div>
+    
+     <!-- footer strt  -->
+  <footer class="py-3 my-4">
+     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+     <li class="nav-item"><a href="#" class="nav-link px-2 text-warning">Home</a></li>
+     <li class="nav-item"><a href="#" class="nav-link px-2 text-warning">Features</a></li> 
+     <li class="nav-item"><a href="#" class="nav-link px-2 text-warning">Pricing</a></li>
+     <li class="nav-item"><a href="#" class="nav-link px-2 text-warning">FAQs</a></li>  
+     <li class="nav-item"><a href="#" class="nav-link px-2 text-warning">About</a></li>   
+    </ul>
+    <p class="text-center text-warning">© 2026 Company, Inc</p>
+  </footer>
+   <!-- footer end -->
+ 
 
 
 </body>
